@@ -1,0 +1,188 @@
+파이썬 설치
+print
+help
+파이썬 장단점?
+조 
+한글 자음 모음 
+변수 선언 
+x = 1
+자료형
+숫자형(int) 
++ - * / ** // %
+문자형(str) 
+"" '' + *
+""" """ ''' '''
+\n enter
+\t tap
+\\
+hi	hello
+a = 1
+a "+" a "=" a + a
+1(a)+1(a)=2(a+a)
+%d 는 숫자 (정수)
+a = 1
+"%d(1) + " %a
+1(a)+1(a)=2(a+a)
+"%d + %d = %d" %(a,a,a+a)
+
+%s 문자 
+print("company = %s, a = %d" %(company,a))
+
+%f 실수
+print("%f" %(1/3))
+
+kakao[0] = k
+01234
+naver
+""+"k"+""
++"a"+""
++"k"+""
++"a"+""
++"o"+""
+%c 한글자 char
+print("%s" %company[0])
+
+회사에서 파이선 버전
+3.2
+버전 3.6
+print(f"{변수}")
+
+
+find index count
+len(변수) len(gth)
+사람말로 길이 
+kakao
+01234
+
+
+파이썬 특징 
+
+1. 스크립트 언어 
+a = 1
+a = 2
+b = 2
+c = 2
+d = 2
+a = 3
+print(a)
+3
+
+2. 동적 타이핑 
+a = 1
+b = "hi"
+자료형을 알아서 선언함
+print(a + b)
+Error
+
+3. 플랫폼 독립적
+os
+window
+linux(서버용 1)
+macos
+
+
+name : kim, age : 10
+
+딕셔너리 (dictionary) {}
+{ key : value,key : value}
+.get(key)
+.keys()
+.values()
+
+
+리스트 list [,,,,]
+순서가 있다 
+append 넣고
+remove 지우고
+del 
+sort
+reverse
+insert(index, element)
+미만 4
+0123
+[56, 4, 54, 45, 45, 4, 3, 3, 3, 2, 2, 1]
+  0  1   2   3   4
+[1:4]
+1 부터 4 미만 까지
+
+
+2271080321408  추가
+tmp 다르다 tmp2
+
+2271077282432 name 을 kim 으로 바꿈 
+
+튜플 () 읽기전용
+
+
+set {} 순서가 없다 중복제거
+add(element)
+update(list)
+remove(element)
+>>> a = {1,2,3}
+>>> b = {2,3,4,5}
+>>> a-b
+{1}
+>>> a|b
+{1, 2, 3, 4, 5}
+>>> a&b
+{2, 3}
+
+불 bool boolean
+True False
+= 선언
+같다 == 
+초과 >
+미만 <
+이상 >=
+이하 <=
+
+
+tmp = [2,3,4,5,6,7,7,5,4,3]
+중복제거 하고
+정렬을 하고
+3번째 가 4 이상인가 
+
+
+
+person1 = {"name":"kim", 'score':90}
+person2 = {"name":"park", 'score':70}
+person3 = {"name":"lee", 'score':100}
+a = [person1 ,person2 ,person3 ]
+
+80점 이상 합격
+출력
+person1 의 이름은 kim이고 score는 90로 True
+person2 의 이름은 park이고 score는 70로 False
+person3 의 이름은 lee이고 score는 100로 True
+
+a = [2,3,4,5,10]
+b = [4,5,6,7,8]
+set_a = set(a)
+set_b = set(b)
+
+교집합에 
+최댓값 출력
+
+clean code
+
+snake case
+person_list = ["사람1","사람2"]
+
+cammel case
+personList = ["사람1","사람2"]
+
+반복문 조건문 툴
+
+
+
+
+
+
+
+
+
+
+
+
+
+
