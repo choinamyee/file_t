@@ -86,16 +86,96 @@ a = [10,20,30,10,20,30,10,20,30]
 # print(save)
 
 # 3.
-person_execl = [["kim",13],["park",15],["lee",16]]
-save = []
-# tmp = {"name":"", "age":0}
-for data in person_execl: 
-    tmp = {"name":"", "age":0}
-    # tmp1 = tmp.copy()
-    for i in range(0,len(list(tmp.keys()))): 
-        tmp[list(tmp.keys())[i]] = data[i] 
-    save.append(tmp) 
-print(save)
-print(id(save[0]))
-print(id(save[1]))
-print(id(save[2]))
+# person_execl = [["kim",13],["park",15],["lee",16]]
+# save = []
+# for data in person_execl: 
+#     tmp = {"name":"", "age":0}
+#     # tmp1 = tmp.copy()
+#     for i in range(0,len(list(tmp.keys()))): 
+#         tmp[list(tmp.keys())[i]] = data[i] 
+#     save.append(tmp) 
+# print(save)
+# print(id(save[0]))
+# print(id(save[1]))
+# print(id(save[2]))
+
+# money = 43250
+# if money // 10000 >= 1:
+#     print(f"만원 짜리는 {money//10000}개 있고")
+#     money -= (money//10000) * 10000
+# if money // 5000 >= 1:
+#     print(f"5000원 짜리는 {money//5000}개 있고")
+#     money = money - (money//5000) * 5000
+# else:
+#     print(f"5000원 짜리는 없고")
+# if money // 1000 >= 1:
+#     print(f"1000원 짜리는 {money//1000}개 있고")
+#     money = money - (money//1000) * 1000
+
+# money = 43250
+# a = [10000, 5000, 1000, 500, 100, 50, 10]
+# for won in a :
+#     if money // won >= 1:
+#         print(f"{won}원 짜리는 {money//won}개 있고")
+#         money -= (money//won) * won
+#     else:
+#         print(f"{won}원 짜리는 없고")
+
+# a = [47,90,1,23,40,5]
+# for el in a :
+#     answer = f"{el}는 "
+#     if el % 2 == 0 and el % 3 == 0:
+#         answer += "2 와 3의 공배수 입니다"
+#     elif el % 2 == 0 or el % 3 == 0:
+#         if el % 2 == 0:
+#             answer += "2의 배수 입니다"
+#         elif el % 3 == 0:
+#             answer += "3의 배수 입니다"
+#     else: 
+#         answer += "2 와 3의 공배수 아닙니다"
+#     print(answer)
+
+# a = [47,90,1,23,40,5]
+# count1 = 0
+# count2 = 0
+# for el in a :
+#     if el % 2 ==0:
+#         print(f"{el} 은 짝수입니다")
+#         count1+=1
+#     else:
+#         print(f"{el} 은 홀수입니다")
+#         count2 = count2 + 1
+# print(f"짝수는 {count1}개입니다")
+# print(f"홀수는 {count2}개입니다")
+
+a = [47,90,1,23,40,5]
+tmp = {
+    0: {"str" : "2 와 3의 공배수가 아닌 것은 ","count": 0}
+    ,2: {"str" : "2의 배수 인 것은 ","count": 0}
+    ,3: {"str" : "3의 배수 인 것은 ","count": 0}
+    ,6: {"str" : "2 와 3의 공배수 인 것은 ","count": 0}
+    }
+# b = [6, 3, 2, 0] 내일 
+for el in a :
+    answer = f"{el}는 "
+    if el % 6 == 0:
+        answer += "2 와 3의 공배수 입니다"
+        tmp[6]['count'] = tmp.get(6).get('count')+1
+    elif el % 2 == 0:
+        answer += "2의 배수 입니다"
+        tmp[2]['count'] = tmp.get(2).get('count')+1
+    elif el % 3 == 0:
+        answer += "3의 배수 입니다"
+        tmp[3]['count'] = tmp.get(3).get('count')+1
+    else: 
+        answer += "2 와 3의 공배수 아닙니다"
+        tmp[0]['count'] = tmp.get(0).get('count')+1
+for key in  list(tmp.keys()):
+    tmp2 = tmp.get(key) # {"str" : "2 와 3의 공배수가 아닌 것은 ","count": 0}
+    print(f"{tmp2.get('str')}{tmp2.get('count')}개입니다")
+
+
+
+
+
+
