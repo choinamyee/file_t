@@ -55,20 +55,47 @@ a = [10,20,30,10,20,30,10,20,30]
 # person1 = {"name":"park","age":15 }
 # person2 = {"name":"lee","age":16 }
 # a = [person,person1,person2]
-person_execl = [["name","age"],["kim",13],["park",15],["lee",16]]
-keys = person_execl[0] # ["name","age"]
-datas = person_execl[1:] # [["kim",13],["park",15],["lee",16]]
-save = []
-for data in datas: # 3번 반복 첫번째 일때 ["kim",13]
-    tmp = {} # {} {'name': 'kim'} {'name': 'kim', 'age': 13}
-    for i in range(0,len(keys)): # [0,1] 2 번 반복 i=0
-        tmp[keys[i]] = data[i] 
-        # i=0, keys[0] = "name" , data[0] ="kim" {'name': 'kim'}
-        # i=1, keys[1] = "age" , data[1] =13 {'name': 'kim', 'age': 13}
-    save.append(tmp) # [{'name': 'kim', 'age': 13}]
-print(save)
 
-    #     tmp[key] = ""
-    # for el in data:
-    #     tmp[key] = el
-# range(0,len(keys)) = [0,1]
+# 1.
+# person_execl = [["name","age"],["kim",13],["park",15],["lee",16]]
+# keys = person_execl[0] # ["name","age"]
+# datas = person_execl[1:] # [["kim",13],["park",15],["lee",16]]
+# save = []
+# for data in datas: # 3번 반복 첫번째 일때 ["kim",13]
+#     tmp = {} # {} {'name': 'kim'} {'name': 'kim', 'age': 13}
+#     for i in range(0,len(keys)): # [0,1] 2 번 반복 i=0
+#         tmp[keys[i]] = data[i] 
+#         # i=0, keys[0] = "name" , data[0] ="kim" {'name': 'kim'}
+#         # i=1, keys[1] = "age" , data[1] =13 {'name': 'kim', 'age': 13}
+#     save.append(tmp) # [{'name': 'kim', 'age': 13}]
+# print(save)
+
+
+# 2.
+# person_execl = [["name","age"],["kim",13],["park",15],["lee",16]]
+# keys = person_execl[0] # ["name","age"]
+# datas = person_execl[1:] # [["kim",13],["park",15],["lee",16]]
+# save = []
+# for data in datas:
+#     tmp = {} # {"name":"","age":""}
+#     for key in keys: 
+#         tmp[key] = ""
+#     for el in data: # ["kim",13]
+#         tmp[key] = el
+#     save.append(tmp) 
+# print(save)
+
+# 3.
+person_execl = [["kim",13],["park",15],["lee",16]]
+save = []
+# tmp = {"name":"", "age":0}
+for data in person_execl: 
+    tmp = {"name":"", "age":0}
+    # tmp1 = tmp.copy()
+    for i in range(0,len(list(tmp.keys()))): 
+        tmp[list(tmp.keys())[i]] = data[i] 
+    save.append(tmp) 
+print(save)
+print(id(save[0]))
+print(id(save[1]))
+print(id(save[2]))
