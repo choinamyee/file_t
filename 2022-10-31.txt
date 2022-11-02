@@ -171,14 +171,24 @@ person_list = ["사람1","사람2"]
 cammel case
 personList = ["사람1","사람2"]
 
-반복문 조건문 툴
+툴 반복문 조건문
+
+python 
+pycharm
+vscode 
 
 
 
 
+git config --global user.name ""
+git config --global user.email ""
 
-
-
+git init
+git add . 
+git commit -m "1# any Error update"
+git branch -M main 
+git remote add origin https://github.com/tjdanqkr/bit_python_basic.git 
+git push -u origin main
 
 
 
