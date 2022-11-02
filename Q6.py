@@ -90,7 +90,11 @@ for i in range(0,len(a)):
         c.append(a[i])
 print(c)
     
+# 밥먹고 
+# 조별 문제 던져줄건데
 
+# 1시간은 혼자 풀어보고 
+# 1시간 회의 해서 
 
 
 
