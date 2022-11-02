@@ -43,17 +43,18 @@ tmp = {
     ,2: {"str" : "2의 배수 인 것은 ","count": 0}
     ,3: {"str" : "3의 배수 인 것은 ","count": 0}
     ,6: {"str" : "2 와 3의 공배수 인 것은 ","count": 0}
+    ,5: {"str" : "5 배수 인 것은 ","count": 0}
     }
-b = [6, 2, 3, 0] # 내일 
-a = [47,90,1,23,40,5]
-for el in a : # el = 40
-    for i in b: # i=6 2 3 0
+b = [6, 2, 3, 5, 0] # 내일 
+a = [47,90,1,10,23,40,5]
+for el in a : # el = 90
+    for i in b: # i=6 2 3 5 0
         if i==0:
             tmp[0]['count'] = tmp.get(0).get('count')+1
             break
         if el % i == 0:
             tmp[i]['count'] = tmp.get(i).get('count')+1
-            break
+            
 
 for key in  list(tmp.keys()):
     tmp2 = tmp.get(key) # {"str" : "2 와 3의 공배수가 아닌 것은 ","count": 0}
