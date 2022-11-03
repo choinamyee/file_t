@@ -132,7 +132,7 @@
 
 
 def space_to_list(st:str):
-    b= []
+    b = []
     for i in st:
         if i != " ":
             b.append(i)
@@ -142,6 +142,10 @@ a = "a b c"
 # print(space_to_list(a)) # ['a','b','c']
 b = a.split(" ")
 print(b)
+
+
+# (클래스 class) (oop 객체지향 )
+
 
 
 
