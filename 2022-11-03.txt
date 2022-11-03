@@ -65,10 +65,10 @@ def solution(numbers:list):
     answer = []
     return answer
 
-문자열 변환 3
-페이지 2
-배열 움직이기  1
-뒤집어 더하기 빼기 4
+문자열 변환 3             4 
+페이지 2                 3 
+배열 움직이기  1          1 
+뒤집어 더하기 빼기 4       2 
 
 
 
