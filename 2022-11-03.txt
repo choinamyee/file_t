@@ -26,7 +26,7 @@ def solution(st: str):
 1이 몇번 나오는지 
 9가 몇번 나오는지 
 
-1은 12번, 9는 2
+1은 11번, 9는 2
 
 
 def solution(n:int)
@@ -34,6 +34,7 @@ def solution(n:int)
 print()
 
 배열 움직이기
+
 [1, 2, 3, 4, 5, 6]
 ["left","right","right","right"]
 
@@ -54,13 +55,27 @@ def solution(numbers:list[int], direction:str):
     return answer
 
 뒤집어 더하기 빼기
+뒤집기 전 짝수일때 빼기 
 [123,234,543]
 321 - 432 + 345 = 234
 [77,977,5654]
 77 + 779 - 4565 = -3709
-뒤집기 전 짝수일때 빼기 
-def solution(numbers:listint):
+
+def solution(numbers:list):
     answer = []
     return answer
+
+문자열 변환 3
+페이지 2
+배열 움직이기  1
+뒤집어 더하기 빼기 4
+
+
+
+
+
+
+
+
 
 
