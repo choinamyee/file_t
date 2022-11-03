@@ -1,0 +1,66 @@
+문자열 변환 
+zero = 0
+one = 1
+two = 2
+three = 3
+four = 4
+.
+.
+.
+nine = 9
+
+0 ~ 9
+
+one4seveneight -> 1478
+2three45sixseven -> 234567
+23four5six7 -> 234567
+
+def solution(st: str):
+	return int
+
+페이지
+19 페이지
+1,2,3,4,5,6,7,8,9
+,10,11,12,13,14,15,16,17,18,19
+
+1이 몇번 나오는지 
+9가 몇번 나오는지 
+
+1은 12번, 9는 2
+
+
+def solution(n:int)
+	return 
+print()
+
+배열 움직이기
+[1, 2, 3, 4, 5, 6]
+["left","right","right","right"]
+
+"left"
+[2,3,4,5,1]
+
+"right"
+[1,2,3,4,5,6]
+
+"right"
+[6,1,2,3,4,5]
+
+"right"
+[5,6,1,2,3,4]
+
+def solution(numbers:list[int], direction:str):
+    answer = []
+    return answer
+
+뒤집어 더하기 빼기
+[123,234,543]
+321 - 432 + 345 = 234
+[77,977,5654]
+77 + 779 - 4565 = -3709
+뒤집기 전 짝수일때 빼기 
+def solution(numbers:listint):
+    answer = []
+    return answer
+
+
