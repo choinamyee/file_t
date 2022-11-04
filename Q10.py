@@ -99,23 +99,19 @@ a = []
 # 파일은 닫아줘라 f.close()
 
 # {"name": "kim", "age": 15}
-f = open("9898.csv", "r", encoding="utf-8")
+# . 현위치
+# ./csv/9898.csv
+f = open("./csv/9898.csv", "r", encoding="utf-8")
 total_data = f.readlines()
 data_keys = total_data[0].strip().split(",")
-
-# for i in range()
-data1 = total_data[1].strip().split(",")
-dict1 = {data_keys[0]: data1[0]
-, data_keys[1]: data1[1] }
-print(dict1)
-# total_data[2]
-# 'park,18\n' strip -> 'park,18'
-# 'park,18' split(",") -> ['park','18']
-data2 = total_data[2].strip().split(",")
-dict2 = {data_keys[0]: data2[0]
-, data_keys[1]: data2[1] }
-print(dict2)
-
+data_list = []
+for i in range(1,len(total_data)):
+    data1 = total_data[i].strip().split(",")
+    dict1 = {}
+    for j in range(0,len(data1)):
+        dict1[data_keys[j]] = data1[j]
+    data_list.append(dict1)
+print(data_list)
 f.close()
 
 
