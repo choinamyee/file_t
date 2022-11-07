@@ -25,10 +25,19 @@ from phone.iphone import iphone
 # print(a.sampay)
 # print(a.price)
 # print(a.name)
-b = iphone("아이폰 13 프로",2000000,False)
-print(b.apppay)
-print(b.price)
-print(b.name)
+# b = iphone("아이폰 13 프로",2000000,False)
+# print(b.apppay)
+# print(b.price)
+# print(b.name)
+myphone = iphone("아이폰 xr", 1500000, False)
+yourphone = galaxy("s7", 1000000, False)
+yourphone2 = iphone("아이폰 11", 1000000, True)
+# {}
+yourphone.discount(10)
+myphone.discount(10)
+print(yourphone.price)
+print(myphone.price)
+
 
 
 
